@@ -12,7 +12,11 @@ module.exports = {
     prism: {
       additionalLanguages: ["kotlin", "swift", "rust", "toml"]
     },
-    hideableSidebar: true,
+    docs: {
+      "sidebar": {
+        hideable: true
+      }
+    },
     colorMode: {
       defaultMode: "light",
       disableSwitch: true,
@@ -48,6 +52,7 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} Mozilla Corporation`,
     },
     algolia: {
+      appId: "foobar",
       apiKey: "cce683dfea9772207408c2b161a22641",
       indexName: "experimenter",
     },
